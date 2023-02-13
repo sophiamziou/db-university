@@ -6,5 +6,6 @@
 
 3. Calcolare la media dei voti di ogni appello d'esame
     SELECT exam_id, AVG(vote) as voto_medio FROM exam_student GROUP BY exam_id;
-    
+
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+    SELECT COUNT(id) as numero_corsi,`department_id` FROM `degrees` GROUP BY `department_id`;
